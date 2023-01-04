@@ -6,3 +6,4 @@ function taFramKnapp(){
     listEl.classList.toggle("show");
 }
 menyKnappEl.addEventListener('click', taFramKnapp);
+

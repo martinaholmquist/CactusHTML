@@ -90,6 +90,7 @@ body {
     /*align-items: center;
     font-family: var(--typsnitt3);*/
     justify-content: left;
+    padding: 10px;
 
     /*
     justify-content: right;
@@ -114,6 +115,7 @@ body {
     /*text-shadow: 1px 0 0 #182603, 0 -1px 0 #182603, 0 1px 0 #182603, -1px 0 0 #182603;*/
 }
 
+
 nav {
     /*background-color: #6A736B;*/
     width: 100%;
@@ -125,7 +127,6 @@ nav {
     justify-content: space-around;
     /*lägger dem i mitten */
     /*flex-direction:column; lägger dem under varandra istället, staplas*/
-
 }
 
 a {
@@ -138,66 +139,135 @@ a {
     /*nu använder jag variablen dark och accent på alla länkar*/
     font-family: var(--typsnitt3);
     font-size: larger;
+    padding: 10px;
 }
 
 h2 {
     display: flex;
     justify-content: center;
     align-content: center;
+    padding: 10px;
 
 
 }
 
-article {
+article { 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
-
 }
 
+    #Gulblommig{
+    display: flex;
+    border-radius: 10px;
+    /* Rounded corners */
+   }
 
+   #Fjadrig{
+    display: flex;
+    border-radius: 10px;
+    /* Rounded corners */
+   } 
 
-div.gallery {
-    background-color: aqua;
-    margin: 5px;
-    border: 1px solid #ccc;
+   #Draksvans{
+    display: flex;
+    border-radius: 10px;
+    /* Rounded corners */
+   }
 
-    float: left;
-    width: 180px;
-    /*
-    width: 25%;*/
-}
-
-div.gallery:hover {
-    background-color: aquamarine;
-    border: 1px solid #777;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
+   #Vilseledande{
+    display: flex;
+    border-radius: 10px;
+    /* Rounded corners */
+   } 
 
 
 
 
-
-
-
-
-
-#fixedbutton {
+   #fixedbutton {
     position: fixed;
+    z-index: 99;
+    /* Make sure it does not overlap */
+    background-color: #FEE1C4;
+    /* Set a background color */
+    color: #1C2705;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 10px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
 
-    bottom: 0%;
-    left: 50%;
+    bottom: 2%;
+    left: 60%;
 }
 
+footer {
+    width: 80%;
+    height: 12%;
+    display: flex;
+    /*lägger divvarna då de ligger i article, boxen efter varandra*/
+    align-items:flex-end;
+    /*lägger dem i mitten*/
+    justify-content:flex-end;
+    justify-content:center;
+    justify-content:space-around;
+    /*lägger dem i mitten */
+} 
 
 
+
+ 
+    @media screen and (max-widh:400px){
+        /* scc för mindre skärmar än 400 dvs detta sker när det minskas till mindre*/
+       
+        #fixedbutton {
+            left: 40%;
+        }
+
+        #article1{
+            position: absolute;
+            display:flex;
+            left:10%;
+           }
+
+           #article2{
+            position: absolute;
+            display:flex;
+            left:10%;
+           }
+
+       #Fjadrig {
+        position: relative;
+        width: 120px;
+       }
+       #Fjadrigtext{
+        font-size: 15px;
+       }
+       #Gulblommig{
+        position: relative;
+        width: 120px;
+       }
+
+       #Gulblommigtext{
+        font-size: 15px;
+       }
+
+
+
+       #Vilseledande{
+        position: relative;
+        width: 60%;
+        height: 60%;
+       } 
+
+       #Draksvans{
+        position: relative;
+        width: 60%;
+        height: 60%;
+       } 
+     }

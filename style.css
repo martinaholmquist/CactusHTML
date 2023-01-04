@@ -124,6 +124,7 @@ div2{
     /*align-items: center;
     font-family: var(--typsnitt3);*/
     justify-content: left;
+    padding: 10px;
    
     /*
     justify-content: right;
@@ -174,6 +175,8 @@ a{
     color: var(--länkfärg); /*nu använder jag variablen dark och accent på alla länkar*/
     font-family: var(--typsnitt3);
     font-size: larger;
+    padding: 10px;
+    
     /*text-shadow: 1px 0 0 #182603, 0 -1px 0 #182603, 0 1px 0 #182603, -1px 0 0 #182603;*/
     /*border-radius: 40%; /*gör de runda, ändra detta så ändras formen*/
     /*margin: 5%;*/
@@ -229,7 +232,7 @@ main {
   }*/
 
 
-  .poem{
+  .poem{ 
     display: flex;
     width: 100%;
 	justify-content:center;
@@ -238,32 +241,111 @@ main {
   }
 
 
-  .text{
-    display: flex;
-    width: 100%;
-	justify-content:flex-start;
-    color: var(--länkfärg); /*nu använder jag variablen dark och accent på alla länkar*/
-    font-family: var(--typsnitt3);
- }
 
-
-
- article{
-	display: flex;
-    width: 100%;
-	justify-content:left;
-
-}
-
-  
-
-  
-#fixedbutton {
-    position: fixed;
+    .text{
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        justify-content:flex-start;
+        color: var(--länkfärg); /*nu använder jag variablen dark och accent på alla länkar*/
+        font-family: var(--typsnitt3);
+     }
     
-    bottom: 0%;
-    left: 50%; 
+    
+    
+     article{ 
+        display: flex;
+        width: 100%;
+        justify-content:left;
+        /*background-color: #e47d16;
+         Set a background color */
+        padding: 10px;
+        /* Some padding */
+    
     }
+
+    #Kaktus {
+        border-radius: 10px;
+        /* Rounded corners */
+       }
+       #Gulblommig{
+        border-radius: 10px;
+        /* Rounded corners */
+       }
+
+       #Fjädrig{
+        border-radius: 10px;
+        /* Rounded corners */
+       } 
+    
+    #fixedbutton {
+        position: fixed;
+        z-index: 99;
+        /* Make sure it does not overlap */
+        background-color: #FEE1C4;
+        /* Set a background color */
+        color: #1C2705;
+        /* Text color */
+        cursor: pointer;
+        /* Add a mouse pointer on hover */
+        padding: 10px;
+        /* Some padding */
+        border-radius: 10px;
+        /* Rounded corners */
+        font-size: 18px;
+        /* Increase font size */
+    
+        bottom: 2%;
+        left: 60%;
+    }
+    
+    footer {
+        width: 80%;
+        height: 12%;
+        display: flex;
+        /*lägger divvarna då de ligger i article, boxen efter varandra*/
+        align-items:flex-end;
+        /*lägger dem i mitten*/
+        justify-content:flex-end;
+        justify-content:center;
+        justify-content:space-around;
+        /*lägger dem i mitten */
+    } 
+
+
+    /*
+    @media screen and (max-widh:400px){
+        /* scc för mindre skärmar än 400 dvs detta sker när det minskas till mindre
+        article{
+            width: 40%;
+        }
+        footer{
+            width: 40%;
+        }
+        #fixedbutton {
+            left: 40%;
+        }
+
+       #Kaktus {
+        width: 100px;
+       }
+       #Gulblommig{
+        width: 30px;
+       }
+
+       #Fjädrig{
+        width: 30px;
+       } 
+     }*/
+
+    
+
+ 
+
+  
+
+  
+
 
  
 

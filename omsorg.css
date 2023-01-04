@@ -1,28 +1,25 @@
+/*
 @media screen and (min-widh:600px) {
 
-    /* scc för större skärmar än 600 dvs detta sker när det utökas till större*/
+    /* scc för större skärmar än 600 dvs detta sker när det utökas till större
     section {
         background-color: #FEE1C4;
         font-family: 'Times New Roman', Times, serif;
     }
-}
+}*/
 
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Prosto+One&display=swap');
 
 :root {
-    /* skapa variabler*/
     --typsnitt3: 'Prosto';
     --länkfärg: #1C2705;
-    /*#3F2F0A  201a06  */
 }
 
 
 * {
     margin: 0;
-    /*detta är luftrymme till nästa element*/
     padding: 0;
-    /*inre eller yttre marginal*/
 }
 
 
@@ -61,15 +58,15 @@ body {
 }
 
 
-/* Container holding the image and the text */
 .container1 {
     position: relative;
     display: flex;
     justify-content: left;
+    padding: 10px;
 
 }
 
-/* Centered text  */
+
 .centered {
     position: absolute;
     top: 50%;
@@ -86,7 +83,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
 }
 
 a {
@@ -97,10 +93,10 @@ a {
     color: var(--länkfärg);
     font-family: var(--typsnitt3);
     font-size: larger;
+    padding: 10%;
 }
 
 
-/* Container holding the image and the text */
 main {
     position: relative;
     display: flex;
@@ -124,19 +120,25 @@ main {
     font-family: var(--typsnitt3);
 }
 
+
+
 td,
 th {
     /*här skapar jag lite layout för tables (listan)*/
     border: 1px solid rgb(11, 37, 21);
     padding: 0.5rem;
+
 }
 
 h3 {
+    width: 100%;
     font-family: var(--typsnitt3);
     color: var(--länkfärg);
+    padding: 1%;
 }
 
 table {
+    width: 80%;
     color: var(--länkfärg);
     font-family: var(--typsnitt3);
     border-collapse: collapse;
@@ -144,12 +146,85 @@ table {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    padding: 1%;
 }
+
+
 
 
 #fixedbutton {
     position: fixed;
+    z-index: 99;
+    /* Make sure it does not overlap */
+    background-color: #FEE1C4;
+    /* Set a background color */
+    color: #1C2705;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 10px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
 
-    bottom: 0%;
-    left: 50%;
+    bottom: 2%;
+    left: 60%;
 }
+
+footer {
+    width: 80%;
+    height: 12%;
+    display: flex;
+    /*lägger divvarna då de ligger i article, boxen efter varandra*/
+    align-items:flex-end;
+    /*lägger dem i mitten*/
+    justify-content:flex-end;
+    justify-content:center;
+    justify-content:space-around;
+    /*lägger dem i mitten */
+} 
+
+/*
+@media screen and (max-widh:400px){
+    /* scc för mindre skärmar än 400 dvs detta sker när det minskas till mindre
+
+    tr{
+        width: 2%;
+     }
+     td{
+         width: 2%;
+     }
+     tbody{
+         width: 2%;
+     }
+     th{
+         width: 30%;
+     }
+
+
+    section{
+        width: 30%;
+    }
+
+    h3{
+        width: 30%;
+    }
+    table{
+        width: 30%;
+    }
+
+    table1{
+        width: 30%;
+    }
+
+    section.table1{
+        width: 30%;
+    }
+    #tableId{
+        width: 10%;
+    }
+}
+
+*/
