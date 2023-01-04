@@ -97,7 +97,9 @@
     width: 100%;
     display: flex;  
     align-items: center; 
-    justify-content: space-around; 
+    justify-content: space-around;
+    color: var(--länkfärg);
+    font-family: var(--typsnitt3); 
  }
 
  
@@ -128,6 +130,11 @@
     font-family: var(--typsnitt3);
  }
 
+ td,
+th {
+    border: 1px solid rgb(11, 37, 21);
+    padding: 0.5rem;
+}
 
    
   #fixedbutton {
