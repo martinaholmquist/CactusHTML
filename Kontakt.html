@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="kontakt.css"> <!--länkar till css-->
+</head>
+
+<body>
+
+    <button id="menyKnapp">klicka här för att se menyn </button>
+    <header class="header">
+        <nav id=Meny class="hide"> <!--här kommer en meny-->
+            <div> <a href="index.html">Till hem</a></div>
+            <div> <a href="Kontakt.html">Kontakta mig</a></div>
+            <div> <a href="omsorg.html"> Vårda din kaktus</a></div>
+            <div> <a href="kaktus.html"> Välj din kaktus</a></div>
+        </nav>
+    </header>
+
+
+    <section class="container1">
+        <img src="cactus-loga5.png" alt="logo" width="60" height="120">
+
+        <div class="centered">
+            <H1><i> LOVE CACTUS</i> SHOP</H1>
+        </div>
+    </section>
+
+
+    <br>
+    <article>
+        <h2> Förkovra er och kontakta mig gärna!</h2>
+    </article>
+    <br><br><br>
+    <article>
+        <h3> <i> Tack för att ni hittat hit. Som ni förstår älskar jag kaktusar.
+                Sedan barnsben har jag odlat egna kaktusar. Har ni några funderingar,
+                kontakta mig enligt nedan formulär.
+            </i></h3>
+    </article>
+    <br><br><br>
+
+    <article>
+        <form>
+            <fieldset> 
+                <legend>Kontaktformulär: </legend>
+
+                <label for="name">För- och efternamn: </label> 
+                <br>
+                <input type="text" name="name" id="name" placeholder="Ange ditt namn här:">
+                <br><br> 
+
+                <label for="email">Epost</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Ange din emailadress här:" required>
+
+                <br><br>
+                <label for="number">Telefon nr</label>
+                <br>
+                <input type="number" name="Telefonnr" id="number" placeholder="Ange ditt telefon nr här:" required>
+                <br><br>
+ 
+                <label for="Ämne">Ämne:</label>
+                <br>
+                <select name="Ämne" id="Ämne">
+                    <option value="" disabled selected>Välj ämne:</option>
+                    <option value="Kaktusar">Kaktusar</option>
+                    <option value="Skötsel">Skötsel</option>
+                    <option value="Övrigt">Övrigt</option>
+                </select>
+            </fieldset>
+
+            <br><br>
+
+            <label for="message">Ditt meddelande</label>
+            <br>
+            <textarea name="message" id="message" cols="30" rows="10"
+                placeholder="skriv ditt meddelande här"></textarea> 
+            <br>
+
+
+            <input type="submit" value="Skicka meddelande"> 
+
+            <br><br>
+            <input type="checkbox" name="godkänninnehåll" id="godkänninnehåll" value="godkänninnehåll" required>
+            <label for="godkänninnehåll">Godkänn innehåll</label>
+
+        </form>
+    </article>
+
+
+
+
+
+    <footer class="footer">
+        <a href="#" id="fixedbutton">Till toppen på sidan</a>
+        <!-- <p id="Copyright"><i>Copyright 2022</i></p> -->
+    </footer>
+
+
+    <!--länkar till script-->
+    <script src="script.js"></script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
