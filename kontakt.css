@@ -93,6 +93,13 @@
      font-size: larger;
  }
 
+ p{
+    color: var(--länkfärg); 
+    font-family: var(--typsnitt3);
+    font-size: larger;
+
+ }
+
  article{
     width: 100%;
     display: flex;  
