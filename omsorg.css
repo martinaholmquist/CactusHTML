@@ -1,12 +1,12 @@
-/*
+
 @media screen and (min-widh:600px) {
 
-    /* scc för större skärmar än 600 dvs detta sker när det utökas till större
+    /* scc för större skärmar än 600 dvs detta sker när det utökas till större*/
     section {
         background-color: #FEE1C4;
         font-family: 'Times New Roman', Times, serif;
     }
-}*/
+}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Prosto+One&display=swap');
@@ -28,7 +28,7 @@
     display: none;
 }
 
-/*display block*/
+
 .show {
     display: flex;
 }
@@ -124,7 +124,6 @@ main {
 
 td,
 th {
-    /*här skapar jag lite layout för tables (listan)*/
     border: 1px solid rgb(11, 37, 21);
     padding: 0.5rem;
 
@@ -138,7 +137,6 @@ h3 {
 }
 
 table {
-    width: 80%;
     color: var(--länkfärg);
     font-family: var(--typsnitt3);
     border-collapse: collapse;
@@ -147,6 +145,12 @@ table {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 1%;
+    width: 100%;
+}
+
+#tableId{
+    display: flex;
+    width: 100%;
 }
 
 
@@ -155,20 +159,12 @@ table {
 #fixedbutton {
     position: fixed;
     z-index: 99;
-    /* Make sure it does not overlap */
     background-color: #FEE1C4;
-    /* Set a background color */
     color: #1C2705;
-    /* Text color */
     cursor: pointer;
-    /* Add a mouse pointer on hover */
     padding: 10px;
-    /* Some padding */
     border-radius: 10px;
-    /* Rounded corners */
     font-size: 18px;
-    /* Increase font size */
-
     bottom: 2%;
     left: 60%;
 }
@@ -177,13 +173,10 @@ footer {
     width: 80%;
     height: 12%;
     display: flex;
-    /*lägger divvarna då de ligger i article, boxen efter varandra*/
     align-items:flex-end;
-    /*lägger dem i mitten*/
     justify-content:flex-end;
     justify-content:center;
     justify-content:space-around;
-    /*lägger dem i mitten */
 } 
 
 /*

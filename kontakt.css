@@ -6,37 +6,26 @@
      }
  }
  
- @import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Prosto+One&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,600&family=Oswald:wght@600&family=Prosto+One&display=swap');
  
  
- :root{  /* skapa variabler*/
+ :root{  
      --typsnitt3:'Prosto';
-     --länkfärg: #1C2705;  /*#3F2F0A  201a06  */
-     --typsnitt2:'Oswald';
-     --typsnitt4:'Karla';
+     --länkfärg: #1C2705;  
  }
  
- /*CSS-reset här tar vi bort det som webbläsaren tillsätter automatiskt, så detta ska alltid vara med*/
+
  *{
-    margin:0;  /*detta är luftrymme till nästa element*/
-    padding:0;  /*inre eller yttre marginal*/
+    margin:0;  
+    padding:0;  
 }
  
- 
- /*p{
-     font-size: 2em; 
- }/*för att anpassa tecten på sidan för att kunna zooma eller förminska  
- FÖRG LJUS  #9CA6A0*/
- 
- /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
  
  .hide{
      display: none;
  }
- 
- /*display block*/
+
  .show{
      display:flex;
  }
@@ -44,9 +33,7 @@
  
 
  
- body{ 
-     /*background-color: #6A736B;  #929287  #BFBEB9   #FDE4C7  #B09F8B  #BA7872  */ 
-    
+ body{
      background-color:#FEE1C4 ;
      width: 100vw;
      height: 100vh;
@@ -55,81 +42,62 @@
      background-color: #FEE1C4;
      width: 100%;
      height: 8%;
-     display: flex;  /*lägger divvarna då de ligger i article, boxen efter varandra*/
-     align-items: center; /*lägger dem i mitten*/
-     justify-content: space-around; /*lägger dem i mitten */
+     display: flex; 
+     align-items: center; 
+     justify-content: space-around; 
      
  }
  
  #header{
      width: 100%;
      height: 12%;
-     display: flex;  /*lägger divvarna då de ligger i article, boxen efter varandra*/
-     align-items: center; /*lägger dem i mitten*/
-     justify-content: space-around; /*lägger dem i mitten */
-     /*flex-direction:column; lägger dem under varandra istället, staplas*/
+     display: flex;  
+     align-items: center; 
+     justify-content: space-around; 
+   
  }
 
- /* Container holding the image and the text */
 .container1 {
-    /*background-color: #6A736B;*/
     position: relative;
     display: flex;
-    
-    /*align-items: center;
-    font-family: var(--typsnitt3);*/
     justify-content: left;
     padding: 10px;
-    
-   
-    /*
-    justify-content: right;
-    align-items:flex-start*/
-
-
-   /* position: relative;
-    text-align: left;*/
-   /* color: rgb(6, 54, 22);*/
   }
   
-  /* Centered text  position: absolute;  */
+
   .centered {
     position:absolute;
     top: 50%;  
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--länkfärg); /*nu använder jag variablen dark och accent på alla länkar*/
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /*font-family: var(--typsnitt3);*/
-    /*text-shadow: 1px 0 0 #182603, 0 -1px 0 #182603, 0 1px 0 #182603, -1px 0 0 #182603;*/   
+    color: var(--länkfärg); 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
   }
 
   
   nav{
-    /*background-color: #6A736B;*/
     width: 100%;
     height: 8%;
-    display: flex;  /*lägger divvarna då de ligger i article, boxen efter varandra*/
-    align-items: center; /*lägger dem i mitten*/
-    justify-content: space-around; /*lägger dem i mitten */
-    /*flex-direction:column; lägger dem under varandra istället, staplas*/   
+    display: flex;  
+    align-items: center; 
+    justify-content: space-around;  
 }
 
   a{
-     display: flex; /*här positionerar vi texten i divbokxn och då behövs de nedanför*/
+     display: flex; 
      align-items: center;
      justify-content: center;
      text-decoration: none;
-     color: var(--länkfärg); /*nu använder jag variablen dark och accent på alla länkar*/
+     color: var(--länkfärg); 
      font-family: var(--typsnitt3);
      font-size: larger;
  }
 
  article{
     width: 100%;
-    display: flex;  /*lägger divvarna då de ligger i article, boxen efter varandra*/
-    align-items: center; /*lägger dem i mitten*/
-    justify-content: space-around; /*lägger dem i mitten */
+    display: flex;  
+    align-items: center; 
+    justify-content: space-around; 
  }
 
  
@@ -137,7 +105,7 @@
     width: 50%;
 	justify-content: center;
 	align-content: center;
-    color: var(--länkfärg); /*nu använder jag variablen dark och accent på alla länkar*/
+    color: var(--länkfärg);
     font-family: var(--typsnitt3);
 
  }
@@ -145,36 +113,32 @@
 
  h3{
     width: 50%;
-    display: flex;  /*lägger divvarna då de ligger i article, boxen efter varandra*/
+    display: flex;  
     justify-content: center;
 	align-content: center;
-    color: var(--länkfärg); /*nu använder jag variablen dark och accent på alla länkar*/
+    color: var(--länkfärg);
+    font-family: var(--typsnitt3);
+ }
+ 
+ h4{
+    display: flex;  
+    justify-content: center;
+	align-content: center;
+    color: var(--länkfärg); 
     font-family: var(--typsnitt3);
  }
 
-
- 
-
-  /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
    
   #fixedbutton {
     position: fixed;
     z-index: 99;
-    /* Make sure it does not overlap */
     background-color: #FEE1C4;
-    /* Set a background color */
     color: #1C2705;
-    /* Text color */
     cursor: pointer;
-    /* Add a mouse pointer on hover */
     padding: 10px;
-    /* Some padding */
     border-radius: 10px;
-    /* Rounded corners */
     font-size: 18px;
-    /* Increase font size */
-
     bottom: 2%;
     left: 60%;
 }
@@ -183,11 +147,8 @@ footer {
     width: 80%;
     height: 12%;
     display: flex;
-    /*lägger divvarna då de ligger i article, boxen efter varandra*/
     align-items:flex-end;
-    /*lägger dem i mitten*/
     justify-content:flex-end;
     justify-content:center;
     justify-content:space-around;
-    /*lägger dem i mitten */
 } 
