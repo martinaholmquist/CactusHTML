@@ -98,9 +98,16 @@ a {
 main {
     position: relative;
     display: flex;
+    width: 100%;
     justify-content: right;
     align-items: flex-start;
+    color: var(--länkfärg);
+    font-family: var(--typsnitt3);
+    
 }
+
+
+
 
 
 .top-left {
