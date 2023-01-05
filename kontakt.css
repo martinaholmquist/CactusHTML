@@ -103,12 +103,6 @@ a {
     font-size: larger;
 }
 
-p {
-    color: var(--länkfärg);
-    font-family: var(--typsnitt3);
-    font-size: larger;
-
-}
 
 article {
     width: 100%;
@@ -143,6 +137,9 @@ h3 {
 #tele{
     justify-content: left;
 }
+#gatan{
+    font-size: larger;
+}
 
 
 
@@ -166,6 +163,7 @@ th {
     position: fixed;
     z-index: 99;
     background-color: #FEE1C4;
+    font-family: var(--typsnitt3);
     color: #1C2705;
     cursor: pointer;
     padding: 10px;
@@ -183,4 +181,6 @@ footer {
     justify-content: flex-end;
     justify-content: center;
     justify-content: space-around;
+    font-family: var(--typsnitt3);
+    color: #1C2705;
 }

@@ -159,6 +159,7 @@ table {
     position: fixed;
     z-index: 99;
     background-color: #FEE1C4;
+    font-family: var(--typsnitt3);
     color: #1C2705;
     cursor: pointer;
     padding: 10px;
@@ -176,6 +177,8 @@ footer {
     justify-content:flex-end;
     justify-content:center;
     justify-content:space-around;
+    font-family: var(--typsnitt3);
+    color: #1C2705;
 } 
 
 /*

@@ -178,6 +178,7 @@ article {
     z-index: 99;
     background-color: #FEE1C4;
     color: #1C2705;
+    font-family: var(--typsnitt3);
     cursor: pointer;
     padding: 10px;
     border-radius: 10px;
@@ -194,4 +195,6 @@ footer {
     justify-content: flex-end;
     justify-content: center;
     justify-content: space-around;
+    color: #1C2705;
+    font-family: var(--typsnitt3);
 }
