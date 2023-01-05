@@ -32,6 +32,14 @@
 }
 
 
+/*
+.hideformular {
+    display: none;
+}*/
+
+
+
+
 
 
 body {
@@ -142,6 +150,15 @@ td,
 th {
     border: 1px solid rgb(11, 37, 21);
     padding: 0.5rem;
+}
+
+
+.tackar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: var(--länkfärg);
+    font-family: var(--typsnitt3);
 }
 
 

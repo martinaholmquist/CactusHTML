@@ -49,7 +49,7 @@
         <nav> <!--här kommer en meny-->
             <ul>
                 <li>
-                    <a id="tele" href="tel077777777">📞 0707777777</a> 
+                    <a id="tele" href="tel:077777777">📞 0707777777</a> 
                     
                 </li>
     
@@ -68,7 +68,7 @@
     <br><br><br>
 
 
-    <article>
+    <article id="kontaktformular">
         <form>
             <fieldset>
                 <legend>Kontaktformulär: </legend>
@@ -97,24 +97,37 @@
                     <option value="Övrigt">Övrigt</option>
                 </select>
             </fieldset>
-
             <br><br>
-
             <label for="message">Ditt meddelande</label>
             <br>
             <textarea name="message" id="message" cols="30" rows="10"
-                placeholder="skriv ditt meddelande här"></textarea>
-            <br>
-
-
-            <input type="submit" value="Skicka meddelande">
-
+                placeholder="skriv ditt meddelande här"></textarea>         
             <br><br>
             <input type="checkbox" name="godkänninnehåll" id="godkänninnehåll" value="godkänninnehåll" required>
             <label for="godkänninnehåll">Godkänn innehåll</label>
-
+            <br>
+            <input id="submitknapp" type="submit" value="Skicka meddelande">
         </form>
     </article>
+
+<!--
+
+        <br><br>
+    <div id="my_form">
+        <p>This is my first part of the form.</p>
+        <button id="nextStep">Submit</button>
+      </div>
+      
+ -->
+    
+    <article class="tackar">   
+      <div id="thank_you" style="display: none;">
+        <p>Tack för ditt meddelande!!</p>
+        <img src="bakgrundblomma.png" alt="vilsekaktus" width="180" height="180">
+        <!--   <button type="submit">Close</button> -->
+      </div>
+    </article>
+   
 
 
 
