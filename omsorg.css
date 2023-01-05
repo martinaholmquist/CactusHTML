@@ -93,7 +93,7 @@ a {
     color: var(--länkfärg);
     font-family: var(--typsnitt3);
     font-size: larger;
-    padding: 10%;
+    padding: 10px;
 }
 
 

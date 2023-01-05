@@ -101,6 +101,7 @@ a {
     color: var(--länkfärg);
     font-family: var(--typsnitt3);
     font-size: larger;
+    padding: 10px;
 }
 
 
@@ -136,10 +137,18 @@ h3 {
 
 #tele{
     justify-content: left;
+    padding: 0px;
 }
 #gatan{
     font-size: larger;
+    padding: 0px;
 }
+
+#mailen{
+    padding: 0px;
+}
+
+
 
 
 
