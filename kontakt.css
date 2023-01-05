@@ -1,150 +1,151 @@
-@media screen and (min-widh:600px){
+@media screen and (min-widh:600px) {
+
     /* scc för större skärmar än 600 dvs detta sker när det utökas till större*/
-     section {
-         background-color: #FEE1C4;
-         font-family: 'Times New Roman', Times, serif;
-     }
- }
- 
-
- @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Prosto+One&display=swap');
- 
- 
- :root{  
-     --typsnitt3:'Prosto';
-     --länkfärg: #1C2705;  
- }
- 
-
- *{
-    margin:0;  
-    padding:0;  
+    section {
+        background-color: #FEE1C4;
+        font-family: 'Times New Roman', Times, serif;
+    }
 }
- 
- 
- .hide{
-     display: none;
- }
 
- .show{
-     display:flex;
- }
- 
- 
 
- 
- body{
-     background-color:#FEE1C4 ;
-     width: 100vw;
-     height: 100vh;
- }
- #menyKnapp{
-     background-color: #FEE1C4;
-     width: 100%;
-     height: 8%;
-     display: flex; 
-     align-items: center; 
-     justify-content: space-around; 
-     
- }
- 
- #header{
-     width: 100%;
-     height: 12%;
-     display: flex;  
-     align-items: center; 
-     justify-content: space-around; 
-   
- }
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Prosto+One&display=swap');
+
+
+:root {
+    --typsnitt3: 'Prosto';
+    --länkfärg: #1C2705;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+
+
+
+body {
+    background-color: #FEE1C4;
+    width: 100vw;
+    height: 100vh;
+}
+
+#menyKnapp {
+    background-color: #FEE1C4;
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#header {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
 
 .container1 {
     position: relative;
     display: flex;
     justify-content: left;
     padding: 10px;
-  }
-  
-
-  .centered {
-    position:absolute;
-    top: 50%;  
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--länkfärg); 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;  
-  }
-
-  
-  nav{
-    width: 100%;
-    height: 8%;
-    display: flex;  
-    align-items: center; 
-    justify-content: space-around;  
 }
 
-  a{
-     display: flex; 
-     align-items: center;
-     justify-content: center;
-     text-decoration: none;
-     color: var(--länkfärg); 
-     font-family: var(--typsnitt3);
-     font-size: larger;
- }
 
- p{
-    color: var(--länkfärg); 
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--länkfärg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+nav {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--länkfärg);
+    font-family: var(--typsnitt3);
+    font-size: larger;
+}
+
+p {
+    color: var(--länkfärg);
     font-family: var(--typsnitt3);
     font-size: larger;
 
- }
+}
 
- article{
+article {
     width: 100%;
-    display: flex;  
-    align-items: center; 
+    display: flex;
+    align-items: center;
     justify-content: space-around;
     color: var(--länkfärg);
-    font-family: var(--typsnitt3); 
- }
+    font-family: var(--typsnitt3);
+}
 
- 
- h2{
+
+h2 {
     width: 50%;
-	justify-content: center;
-	align-content: center;
+    justify-content: center;
+    align-content: center;
     color: var(--länkfärg);
     font-family: var(--typsnitt3);
 
- }
+}
 
 
- h3{
+h3 {
     width: 50%;
-    display: flex;  
+    display: flex;
     justify-content: center;
-	align-content: center;
+    align-content: center;
     color: var(--länkfärg);
     font-family: var(--typsnitt3);
- }
- 
- h4{
-    display: flex;  
-    justify-content: center;
-	align-content: center;
-    color: var(--länkfärg); 
-    font-family: var(--typsnitt3);
- }
+}
 
- td,
+
+#tele{
+    justify-content: left;
+}
+
+
+
+td,
 th {
     border: 1px solid rgb(11, 37, 21);
     padding: 0.5rem;
 }
 
-   
-  #fixedbutton {
+
+#fixedbutton {
     position: fixed;
     z-index: 99;
     background-color: #FEE1C4;
@@ -161,8 +162,8 @@ footer {
     width: 80%;
     height: 12%;
     display: flex;
-    align-items:flex-end;
-    justify-content:flex-end;
-    justify-content:center;
-    justify-content:space-around;
-} 
+    align-items: flex-end;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+}
