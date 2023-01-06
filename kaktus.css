@@ -105,37 +105,40 @@ article {
     justify-content: space-around;
     align-items: center;
     align-content: center;
+    padding-inline-start: 10%
+    
+    
 
 }
 
 
 
 #Gulblommig {
-    width: 100%;
+    width: 70%;
     height: auto;
     display: flex;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 #Fjadrig {
-    width: 100%;
+    width: 70%;
     height: auto;
     display: flex;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 #Draksvans {
-    width: 100%;
+    width: 70%;
     height: auto;
     display: flex;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 #Vilseledande {
-    width: 100%;
+    width: 70%;
     height: auto;
     display: flex;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 
