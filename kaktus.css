@@ -112,24 +112,28 @@ article {
 
 #Gulblommig {
     width: 100%;
+    height: auto;
     display: flex;
     border-radius: 10px;
 }
 
 #Fjadrig {
     width: 100%;
+    height: auto;
     display: flex;
     border-radius: 10px;
 }
 
 #Draksvans {
     width: 100%;
+    height: auto;
     display: flex;
     border-radius: 10px;
 }
 
 #Vilseledande {
     width: 100%;
+    height: auto;
     display: flex;
     border-radius: 10px;
 }
