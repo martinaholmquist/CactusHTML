@@ -161,13 +161,13 @@ article {
 }
 
 #Gulblommig {
-    width: 100%;
+    /*width: 100%;*/
     display: flex;
     border-radius: 10px;
 }
 
 #Fjädrig {
-    width: 100%;
+    /*width: 100%;*/
     display: flex;
     border-radius: 10px;
 }
