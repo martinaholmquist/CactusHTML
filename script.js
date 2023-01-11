@@ -22,5 +22,3 @@ var nextStep = document.querySelector('#submitknapp');
   });
 
 
-
-
