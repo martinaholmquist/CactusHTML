@@ -1,6 +1,6 @@
 # CactusHTML
 Simple webb site
-
+https://tinaskaktus.netlify.app/
 
 Website for a product where the product is presented. 
-The website is created using HTML, CSS, and JavaScript.
+This is an initial project developed using JavaScript, HTML, and CSS.
